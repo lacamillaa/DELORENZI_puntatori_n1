@@ -27,18 +27,15 @@ int main() {
     else {
         std::cout << "L'array non contiene valori negativi" << std::endl;
     }
-    std::vector<int> v(10);
-    int c = 0;
+    std::vector<int> v;
     for (int i = 0; i < 10; i++) {
         if (numeri[i] % 10 == 0) {
             v.push_back(numeri[i]);
-            c++;
         }
     }
-    v.resize(c);
     std::cout << "Valori multipli di 10: ";
     for (int i : v) {
-        std::cout << i << " " << std::endl;
+        std::cout << i << " ";
     }
     std::cout << std::endl;
     return 0;
